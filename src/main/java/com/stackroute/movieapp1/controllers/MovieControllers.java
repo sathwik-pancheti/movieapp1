@@ -37,6 +37,10 @@ public class MovieControllers {
 		this.env = env;
 	}
 	
+	public MovieControllers(MovieServiceImpl movieServiceImpl) {
+		// TODO Auto-generated constructor stub
+	}
+
 	@PostMapping("/movie")
 	public ResponseEntity<?> saveMovie(@RequestBody Movie movie)  {
 		try {
@@ -88,7 +92,7 @@ public class MovieControllers {
 	}
 	
 	@DeleteMapping("/movie/{id}")
-	public ResponseEntity<?> deleteMovieById(@PathVariable int id) {
+	public ResponseEntity<?> deleteMovie(@PathVariable int id) {
 		try {
 			logger.info("This is an info message");
 			movieService.deleteMovie(id);

@@ -39,7 +39,8 @@ public class MovieServiceImpl implements MovieService{
 
 	@Override
 	public Optional<Movie> getMovieById(int id) throws MovieNotFoundException {
-		if(movieRepository.existsById(id)) {return movieRepository.findById(id);
+		if(movieRepository.existsById(id)) {
+			return movieRepository.findById(id);
 		}
 		else {
 			throw new MovieNotFoundException("Movie not found");
@@ -49,6 +50,7 @@ public class MovieServiceImpl implements MovieService{
 	@Override
 	public boolean deleteMovie(int id) throws MovieNotFoundException {
 		if(movieRepository.existsById(id)) {
+			movieRepository.deleteById(id);
 			return true;
 		}
 		else {
