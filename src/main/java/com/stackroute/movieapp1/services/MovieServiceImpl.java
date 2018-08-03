@@ -3,6 +3,9 @@ package com.stackroute.movieapp1.services;
 
 import java.util.List;
 import java.util.Optional;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +18,7 @@ import com.stackroute.movieapp1.repositories.MovieRepository;
 public class MovieServiceImpl implements MovieService{
 
 	private MovieRepository movieRepository;
-
+	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	@Autowired
 	public MovieServiceImpl(MovieRepository movieRepository) {
 		super();
@@ -69,8 +72,10 @@ public class MovieServiceImpl implements MovieService{
 	public Optional<Movie> getMovieByTitle(String title) throws MovieNotFoundException {
 		// TODO Auto-generated method stub
 		Optional<Movie> mov= movieRepository.getMovieByTitle(title); 
-		if(mov!=null){
+		
+		if(mov.isPresent()){
 			return mov;
+			
 		}
 		else {
 			throw new MovieNotFoundException("Movie not found");

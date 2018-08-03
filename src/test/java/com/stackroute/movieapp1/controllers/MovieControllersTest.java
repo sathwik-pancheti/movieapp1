@@ -41,7 +41,7 @@ public class MovieControllersTest {
         @Before
         public void setUp() throws Exception {
             MockitoAnnotations.initMocks(this);   
-        }
+        } 
         
         @Test
         public void testGetAllMovies() throws Exception{

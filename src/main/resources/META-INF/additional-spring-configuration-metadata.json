@@ -28,5 +28,55 @@
     "name": "spring.logging.level.org.hibernate",
     "type": "java.lang.String",
     "description": "A description for 'spring.logging.level.org.hibernate'"
+  },
+  {
+    "name": "dockerspring.data.mongodb.uri",
+    "type": "java.lang.String",
+    "description": "A description for 'dockerspring.data.mongodb.uri'"
+  },
+  {
+    "name": "spring.logging.level.mongodb",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.logging.level.mongodb'"
+  },
+  {
+    "name": "spring.logging.level.database",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.logging.level.database'"
+  },
+  {
+    "name": "spring.logging.level.database",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.logging.level.database'"
+  },
+  {
+    "name": "spring.logging.level.port",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.logging.level.port'"
+  },
+  {
+    "name": "spring.logging.level.host",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.logging.level.host'"
+  },
+  {
+    "name": "spring.logging.mongodb.database",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.logging.mongodb.database'"
+  },
+  {
+    "name": "spring.logging.mongodb.port",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.logging.mongodb.port'"
+  },
+  {
+    "name": "spring.logging.mongodb.host",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.logging.mongodb.host'"
+  },
+  {
+    "name": "spring.logging.mongodb.host",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.logging.mongodb.host'"
   }
 ]}
